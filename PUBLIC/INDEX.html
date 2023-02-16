@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="./images/CRO-FFEE_logo-01.svg" type="image/x-icon">
     <style>
         /* CSS Reset */
+        @font-face{
+            font-family: '나눔바른펜OTF';
+            src: url(NanumBarunpenR.otf);
+        }
         *{
             box-sizing:border-box;
             margin:0;
@@ -15,49 +19,35 @@
             padding:0;
         }
 
-        /* 메인폰트 */
-        h1{
-            font-family:'나눔바른펜';
-            font-size: 70px;
-            font-weight: 900;
-            position: absolute;
-            left: 50px;
-            top: 155px;
+        .wrap
+        {
+            width: 380px;
+            margin: auto;
         }
-
-        h2{
-            font-family:'나눔바른펜';
-            font-size: 24px;
+        #메인글귀
+        {
+            font-family: '나눔바른펜OTF';
             font-weight: 900;
-            position: absolute;
-            left: 105px;
-            top: 237px;
-        }
-        a{
-            text-decoration: none;
             color: #342121;
-        }
-        
-        h3{
-            font-family:'나눔바른펜';
-            font-size: 24px;
-            font-weight: 900;
             text-align: center;
-            color: #342121;
-            position: absolute;
-            left: 105px;
-            top: 563px;
-        }          
-        
-        /* 메인폰트 끝 */
+            margin-top: -680px;
+        }
+        #메인글귀 h3{margin-top: 307px;}
+
     </style>
 </head>
 <body>
-    <div style="width: 380px;margin: auto;position: relative;">
-        <img src="./images/INDEX background.jpg" alt="바탕이미지">    
-            <h1><a href="./BEST.html">CRO-FFEE</a></h1>
-            <h2><a href="./BEST.html">croissant&coffee</a></h2>
-            <h3>향기로운 하루의 시작<br>크로피</h3>
-    </div>
+
+    <div class="wrap">
+       <a href="./BEST.html">
+             <img src="./images/INDEX background.jpg" alt="메인페이지" usemap="#시작">
+       </a>
+       <div id="메인글귀">
+        <h1 style="font-size: 84px;">CRO-FFEE</h1>
+        <h2 style="font-size: 24px;">croissant&coffee</h2>
+        <h3 style="font-size: 22px;">향기로운 하루의 시작<br>크로피</h3>
+       </div>
+
+     </div>
 </body>
 </html>
